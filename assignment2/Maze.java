@@ -11,7 +11,7 @@ public class Maze {
     // OTHER INSTANCE VARIABLES IF YOU NEED THEM
     
     /**
-     * Constructor for the Maze class
+     * Constructor for the Maze class buh
      */
     public Maze() {
         rowList = new ArrayList<ArrayList<MazeSquare>>();
