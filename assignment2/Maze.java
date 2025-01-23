@@ -4,6 +4,10 @@
  *
  * @author Nicholas Theus and John Yu
  */
+
+import java.util.Scanner;
+import java.util.ArrayList;
+
 public class Maze {
     private ArrayList<ArrayList<MazeSquare>> rowList;
     private int w;
@@ -52,7 +56,7 @@ public class Maze {
         finishH = Integer.parseInt(lineParams[1]);
 
         for(int i = 0; i < h; i++){
-            lineParams = scanner.nextLine(.split(" "));
+            lineParams = scanner.nextLine().split(" ");
             rowList.add(new ArrayList<MazeSquare>())
 
             for(int j = 0; j < w; j++){
@@ -83,14 +87,30 @@ public class Maze {
      */
     public void print() {
         // YOUR CODE HERE
+        String maze = "";
+
         for(int i = 0; i < h; i++){
             for(int j = 0; j < w; j++){
+                MazeSquare curr = rowList(i, j);
+                if(curr.hasTopWall && j == 0){
+                    for(int b = 0; b < w; b++){
+                        maze += "+-----";
+                    }
+                    maze += "+\n";
+                }
                 
             }
         }
     }
 
     // MORE METHODS AS YOU NEED THEM
+    public int getCols(){
+        return w;
+    }
+
+    public int getRows(){
+        return h;
+    }
 
     // This main program acts as a simple unit test for the
     // load-from-file and print-to-System.out Maze capabilities.
