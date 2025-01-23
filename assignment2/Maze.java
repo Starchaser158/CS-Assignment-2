@@ -8,6 +8,7 @@
 import java.util.Scanner;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.io.File;
 
 public class Maze {
     private ArrayList<ArrayList<MazeSquare>> rowList;
@@ -93,12 +94,14 @@ public class Maze {
         for(int i = 0; i < h; i++){
             for(int j = 0; j < w; j++){
                 MazeSquare curr = rowList.get(i).get(j);
-                if(curr.hasTopWall() && j == 0){
+                if(i == 0 && j == 0){
                     for(int b = 0; b < w; b++){
                         maze += "+-----";
                     }
                     maze += "+\n";
                 }
+
+                
                 
                 
             }

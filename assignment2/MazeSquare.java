@@ -21,7 +21,7 @@ public class MazeSquare {
         lilGuy = squareType;
         design = "";
         if(lilGuy.equals("L")){
-            if()
+            
         }
         else if(lilGuy.equals("|")){
 
@@ -53,23 +53,8 @@ public class MazeSquare {
         return lilGuy;
     }
 
-    // Whatever methods you want, such as:
-    public boolean hasTopWall() {
-        // YOUR CODE (and new return statement) HERE
-        if(getRow() == 0){
-            return true;
-        }
-        else{
-            return false;
-        }
+    public String getSquadGoals(){
+        return squadGoals;
     }
-
-    public boolean hasSideWall(){
-        if(getCol() == getCols() - 1){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
+    
 }
