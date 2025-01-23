@@ -53,23 +53,25 @@ public class Maze {
 
         for(int i = 0; i < h; i++){
             lineParams = scanner.nextLine(.split(" "));
+            rowList.add(new ArrayList<MazeSquare>())
 
             for(int j = 0; j < w; j++){
                 String lilGuy = (String) lineParams[j];
                 if(i == startH && j == startW){
 
-                    MazeSquare suh = new MazeSquare(i, j, lilGuy, "start");
+                    rowList.get(i).add(new MazeSquare(i, j, lilGuy, "start"));
 
                 }
                 
                 else if(i == finishH && j == finishW){
 
-                    MazeSquare fuh = new MazeSquare(i, j, lilGuy, "finish");
+                    rowList.get(i).add(new MazeSquare(i, j, lilGuy, "finish"));
 
                 }
 
                 else{
-                    MazeSquare guh = new MazeSquare(i, j, lilGuy);
+                    
+                    rowList.get(i).add(new MazeSquare(i, j, lilGuy));
                 }
                 
             }

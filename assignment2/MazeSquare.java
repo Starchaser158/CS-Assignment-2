@@ -9,11 +9,11 @@ public class MazeSquare {
     // Instance variables of your choosing
     
     // A constructor, taking whatever parameters you decide:
-    public MazeSquare(int col, int row, String squareType) {
+    public MazeSquare(int row, int col, String squareType) {
         // YOUR CODE HERE
     }
 
-    public MazeSquare(int col, int row, String squareType, String staFinish){
+    public MazeSquare(int row, int col, String squareType, String staFinish){
 
     }
     // Whatever methods you want, such as:
