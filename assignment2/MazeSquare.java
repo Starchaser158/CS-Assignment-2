@@ -9,11 +9,13 @@ public class MazeSquare {
     // Instance variables of your choosing
     
     // A constructor, taking whatever parameters you decide:
-    public MazeSquare(/* your parameters here */) {
+    public MazeSquare(int col, int row, String squareType) {
         // YOUR CODE HERE
     }
 
-    public MazeSquare(int col, int row, String squareType, )
+    public MazeSquare(int col, int row, String squareType, String staFinish){
+
+    }
     // Whatever methods you want, such as:
     public boolean hasTopWall() {
         // YOUR CODE (and new return statement) HERE

@@ -52,10 +52,26 @@ public class Maze {
         finishH = Integer.parseInt(lineParams[1]);
 
         for(int i = 0; i < h; i++){
+            lineParams = scanner.nextLine(.split(" "));
+
             for(int j = 0; j < w; j++){
+                String lilGuy = (String) lineParams[j];
                 if(i == startH && j == startW){
-                    
+
+                    MazeSquare suh = new MazeSquare(i, j, lilGuy, "start");
+
                 }
+                
+                else if(i == finishH && j == finishW){
+
+                    MazeSquare fuh = new MazeSquare(i, j, lilGuy, "finish");
+
+                }
+
+                else{
+                    MazeSquare guh = new MazeSquare(i, j, lilGuy);
+                }
+                
             }
         }
     }
