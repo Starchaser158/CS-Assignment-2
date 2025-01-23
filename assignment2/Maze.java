@@ -8,16 +8,16 @@ public class Maze {
     private ArrayList<ArrayList<MazeSquare>> rowList;
     private int w;
     private int h;
-    // OTHER INSTANCE VARIABLES IF YOU NEED THEM
+    // OTHER INSTANCE VARIABLES IF YOU NEED THE
     
-    /**
-     * Constructor for the Maze class buh
+    /** */
+     * Constructor for the Maze class
      */
     public Maze() {
         rowList = new ArrayList<ArrayList<MazeSquare>>();
     }
 
-    /**
+    /** */
      * Load in a Maze from a given file
      *
      * @param fileName the name of the file containing the maze
