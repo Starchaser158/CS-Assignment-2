@@ -65,7 +65,7 @@ public class MazeSquare {
     }
 
     public boolean hasSideWall(){
-        if(getCol() == Maze.getCols() - 1){
+        if(getCol() == getCols() - 1){
             return true;
         }
         else{

@@ -91,13 +91,14 @@ public class Maze {
 
         for(int i = 0; i < h; i++){
             for(int j = 0; j < w; j++){
-                MazeSquare curr = rowList(i, j);
-                if(curr.hasTopWall && j == 0){
+                MazeSquare curr = rowList.get(i).get(j);
+                if(curr.hasTopWall() && j == 0){
                     for(int b = 0; b < w; b++){
                         maze += "+-----";
                     }
                     maze += "+\n";
                 }
+                
                 
             }
         }
