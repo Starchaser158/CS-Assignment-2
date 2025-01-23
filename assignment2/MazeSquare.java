@@ -51,6 +51,11 @@ public class MazeSquare {
     }
 
     public boolean hasSideWall(){
-        if(getCol() == )
+        if(getCol() == w - 1){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }
