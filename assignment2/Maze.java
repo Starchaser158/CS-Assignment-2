@@ -2,7 +2,7 @@
  * Maze.java
  * A class for loading and printing mazes from files.
  *
- * @author YOUR NAME AND YOUR PARTNER'S NAME
+ * @author Nicholas Theus and John Yu
  */
 public class Maze {
     private ArrayList<ArrayList<MazeSquare>> rowList;
@@ -10,14 +10,14 @@ public class Maze {
     private int h;
     // OTHER INSTANCE VARIABLES IF YOU NEED THE
     
-    /** */
+    /*
      * Constructor for the Maze class
      */
     public Maze() {
         rowList = new ArrayList<ArrayList<MazeSquare>>();
     }
 
-    /** */
+    /*
      * Load in a Maze from a given file
      *
      * @param fileName the name of the file containing the maze
