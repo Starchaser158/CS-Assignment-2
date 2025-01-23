@@ -6,6 +6,7 @@
  */
 
 import java.util.Scanner;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class Maze {
@@ -57,7 +58,7 @@ public class Maze {
 
         for(int i = 0; i < h; i++){
             lineParams = scanner.nextLine().split(" ");
-            rowList.add(new ArrayList<MazeSquare>())
+            rowList.add(new ArrayList<MazeSquare>());
 
             for(int j = 0; j < w; j++){
                 String lilGuy = (String) lineParams[j];
