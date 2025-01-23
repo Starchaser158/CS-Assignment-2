@@ -5,7 +5,7 @@
  *
  * @author Nicholas Theus and John Yu
  */
-public class MazeSquare {
+public class MazeSquare{
     // Instance variables of your choosing
     private int row;
     private int col;

@@ -58,7 +58,7 @@ public class Maze {
         finishH = Integer.parseInt(lineParams[1]);
 
         for(int i = 0; i < h; i++){
-            lineParams = scanner.nextLine().split(" ");
+            lineParams = scanner.nextLine().split("");
             rowList.add(new ArrayList<MazeSquare>());
 
             for(int j = 0; j < w; j++){
@@ -101,11 +101,12 @@ public class Maze {
                     maze += "+\n";
                 }
 
-                
+
                 
                 
             }
         }
+        System.out.println(maze);
     }
 
     // MORE METHODS AS YOU NEED THEM
