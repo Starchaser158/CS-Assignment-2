@@ -8,6 +8,11 @@ public class Maze {
     private ArrayList<ArrayList<MazeSquare>> rowList;
     private int w;
     private int h;
+    private int startW;
+    private int startH;
+    private int finishW;
+    private int finishH;
+
     // OTHER INSTANCE VARIABLES IF YOU NEED THE
     
     /*
@@ -38,6 +43,21 @@ public class Maze {
         h = Integer.parseInt(lineParams[1]);
         
         // YOUR CODE TO FINISH LOADING FILE HERE
+        lineParams = scanner.nextLine().split(" ");
+        startW = Integer.parseInt(lineParams[0]);
+        startH = Integer.parseInt(lineParams[1]);
+
+        lineParams = scanner.nextLine().split(" ");
+        finishW = Integer.parseInt(lineParams[0]);
+        finishH = Integer.parseInt(lineParams[1]);
+
+        for(int i = 0; i < h; i++){
+            for(int j = 0; j < w; j++){
+                if(i == startH && j == startW){
+                    
+                }
+            }
+        }
     }
 
     /**
