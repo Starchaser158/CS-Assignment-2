@@ -39,6 +39,19 @@ public class MazeSquare{
         this.col = col;
         lilGuy = squareType;
         squadGoals = staFinish;
+        design = "";
+        if(lilGuy.equals("L")){
+            
+        }
+        else if(lilGuy.equals("|")){
+
+        }
+        else if(lilGuy.equals("_")){
+
+        }
+        else if(lilGuy.equals("-")){
+
+        }
     }
 
     public int getRow(){
