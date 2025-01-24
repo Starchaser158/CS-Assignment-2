@@ -11,7 +11,6 @@ public class MazeSquare{
     private int col;
     private String lilGuy;
     private String squadGoals;
-    private String design;
     
     // A constructor, taking whatever parameters you decide:
     public MazeSquare(int row, int col, String squareType) {
@@ -19,19 +18,7 @@ public class MazeSquare{
         this.row = row;
         this.col = col;
         lilGuy = squareType;
-        design = "";
-        if(lilGuy.equals("L")){
-            
-        }
-        else if(lilGuy.equals("|")){
-
-        }
-        else if(lilGuy.equals("_")){
-
-        }
-        else if(lilGuy.equals("-")){
-
-        }
+        
     }
 
     public MazeSquare(int row, int col, String squareType, String staFinish){
@@ -39,19 +26,7 @@ public class MazeSquare{
         this.col = col;
         lilGuy = squareType;
         squadGoals = staFinish;
-        design = "";
-        if(lilGuy.equals("L")){
-            
-        }
-        else if(lilGuy.equals("|")){
-
-        }
-        else if(lilGuy.equals("_")){
-
-        }
-        else if(lilGuy.equals("-")){
-
-        }
+        
     }
 
     public int getRow(){
@@ -68,6 +43,21 @@ public class MazeSquare{
 
     public String getSquadGoals(){
         return squadGoals;
+    }
+
+    public String toString(){
+        if(lilGuy.equals("L")){
+            
+        }
+        else if(lilGuy.equals("|")){
+
+        }
+        else if(lilGuy.equals("_")){
+
+        }
+        else if(lilGuy.equals("-")){
+
+        }
     }
     
 }
